@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Francois+One&family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    overflow: auto;
+}
+
+
+body{
+    background-image: linear-gradient(to right, #9d3838, #2fc2cf);
+}
+
+
+#generator {
+    display: flex;
+    flex-flow: column wrap;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+}
+
+
+#generator span{
+    font-size: 4rem;
+    font-weight: 600px;
+    color: #f8f6f6;
+    letter-spacing: 0.6rem;
+    transform: translate(50%, 0;);
+    font-family: 'Cinzel', serif;
+    text-shadow:    1px 1px 0.5px #121612,
+                    1px 2px 0.6px #121612, 
+                    1px 2px 0.4px #121612, 
+                    1px 1px 0.3px #121612, 
+                    1px 1px 1px #121612;   
+}
+
+
+#generator .colors{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.colors input{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s ease transform;
+}
+
+.colors input:hover{
+    transform: scale(1.05);
+}
+
+.colors select{
+    margin-left: 10px;
+    width: 100px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s ease transform;
+}
+
+.colors select:hover{
+    transform: rotate(-2deg);
+}
+
+.colors select .position{
+    font-size: 15px;
+}
+
+.colors #btn-random{
+    margin-left: 20px;
+    background-color: transparent;
+    border-width: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.colors #btn-random img{
+    width: 100%;
+    height: 100%;
+}
+
+.colors #btn-random:hover {
+    width: 22px;
+    height: 22px;
+}
+
+#generator h3{
+    margin-top: 20px;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    font-size: 1.7rem;
+}
+
+
+
+
+
+/*media ipad*/
+@media only screen and (max-width:1100px){
+
+    #generator span{
+        margin: 20px 0;
+        font-size: 2rem;       
+    }
+    
+    .colors input{
+        width: 50px;
+    }
+    .colors select{
+        width: 80px;
+    }
+}
+/*End media ipad */
+
+/*media phone*/
+@media only screen and (max-width:700px){
+
+    #generator span{
+        margin: 20px 0;
+        font-size: 1.5rem;       
+    }
+    
+    .colors input{
+        width: 50px;
+    }
+    .colors select{
+        width: 30px;
+    }
+    
+    #generator h3{
+        font-size: 1.1rem;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+/*End media phone*/
